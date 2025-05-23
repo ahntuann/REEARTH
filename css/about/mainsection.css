@@ -1,0 +1,104 @@
+.main {
+  margin-top: 80px;
+}
+
+/* Section Background */
+.parallax-background {
+  margin-top: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120vh;
+  background-image: linear-gradient(
+      rgba(var(--bg-overlay-color-purple), 0.8),
+      rgba(var(--bg-overlay-color-purple), 0.8)
+    ),
+    url("/assets/img/about/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+  backface-visibility: hidden;
+  pointer-events: none;
+  transform: translate3d(0, 0, 0);
+}
+
+.section {
+  padding: 160px 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.section-colored {
+  color: white;
+}
+
+.section-white {
+  background: white;
+  color: #111;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.section-title-mid,
+.section-title {
+  letter-spacing: 0.05em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  font-size: 1.6rem;
+  margin-bottom: 40px;
+  text-align: start;
+}
+
+.section-title {
+  color: #eade71;
+}
+
+.section-title-mid {
+  color: #000;
+  font-size: 2.2em;
+  font-weight: 700;
+}
+
+.container-mid p,
+.container p {
+  line-height: 1.4em;
+  font-size: 16px;
+  font-family: "Lato", san-serif;
+  font-weight: 100;
+  letter-spacing: 0.1em;
+  text-align: start;
+  display: flex;
+  align-items: flex-start;
+}
+
+.container p {
+  color: #fff;
+  line-height: 25px;
+}
+
+.container-mid p {
+  color: #000;
+  line-height: 30px;
+}
+
+.section-sub-title {
+  color: #fff;
+  letter-spacing: 0.05em;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-size: 3.9rem;
+  margin-bottom: 40px;
+  text-align: start;
+}

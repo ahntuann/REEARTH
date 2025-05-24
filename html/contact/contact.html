@@ -38,14 +38,10 @@
         <ul class="nav-links">
           <li><a href="/index.html">Home</a></li>
           <li><a href="/html/about/about.html">About</a></li>
-          <li>
-            <a href="/html/news/news.html">News</a>
-          </li>
+          <li><a href="/html/news/news.html">News</a></li>
           <li><a href="/html/event/event.html">Events</a></li>
           <li><a href="/html/projects/project.html">Projects</a></li>
-          <li>
-            <a href="/html/podcast/podcast.html">Podcast</a>
-          </li>
+          <li><a href="/html/podcast/podcast.html">Podcast</a></li>
           <li>
             <a href="/html/contact/contact.html" style="color: #f86800"
               >Contact</a
@@ -78,17 +74,19 @@
             <div class="small-title">GET IN TOUCH</div>
             <div class="big-title">Connect with us to make a difference</div>
             <form>
-              <label for="fname">First name</label>
-              <input type="text" id="fname" name="fname" />
+              <label for="contact-fname">First name</label>
+              <input type="text" id="contact-fname" name="fname" />
 
-              <label for="lname">Last name</label>
-              <input type="text" id="lname" name="lname" />
+              <label for="contact-lname">Last name</label>
+              <input type="text" id="contact-lname" name="lname" />
 
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" />
+              <label for="contact-email">Email</label>
+              <input type="email" id="contact-email" name="email" />
 
-              <label for="idea">Please let us know your idea. TYSM</label>
-              <input type="text" id="idea" name="idea" />
+              <label for="contact-idea"
+                >Please let us know your idea. TYSM</label
+              >
+              <input type="text" id="contact-idea" name="idea" />
 
               <button type="submit" class="submit-btn">Submit</button>
             </form>
@@ -99,17 +97,17 @@
             <div class="small-title">RAISE YOUR VOICE</div>
             <div class="big-title">Let us know what's not working</div>
             <form>
-              <label for="fname">First name</label>
-              <input type="text" id="fname" name="fname" />
+              <label for="complain-fname">First name</label>
+              <input type="text" id="complain-fname" name="fname" />
 
-              <label for="lname">Last name</label>
-              <input type="text" id="lname" name="lname" />
+              <label for="complain-lname">Last name</label>
+              <input type="text" id="complain-lname" name="lname" />
 
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" />
+              <label for="complain-email">Email</label>
+              <input type="email" id="complain-email" name="email" />
 
-              <label for="idea">Complain content</label>
-              <input type="text" id="idea" name="idea" />
+              <label for="complain-content">Complain content</label>
+              <input type="text" id="complain-content" name="idea" />
 
               <button type="submit" class="submit-btn">Submit</button>
             </form>
@@ -124,8 +122,56 @@
         <p>Powered By REEARTH</p>
       </div>
     </footer>
-
+    <div
+      id="thankYouModal"
+      style="
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.6);
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      "
+    >
+      <div
+        style="
+          background-color: rgb(24, 21, 124);
+          padding: 2rem 3rem;
+          border-radius: 12px;
+          max-width: 400px;
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        "
+      >
+        <h2 style="margin-bottom: 1rem; color: #e5dd6f">Thank You!</h2>
+        <p style="font-size: 1.1rem; color: #fff">
+          We appreciate your message and will get back to you soon.
+        </p>
+        <button
+          id="closeModalBtn"
+          style="
+            margin-top: 1.5rem;
+            padding: 0.5rem 1.2rem;
+            border: none;
+            background-color: #e5dd6f;
+            color: 000;
+            font-size: 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+          "
+        >
+          Close
+        </button>
+      </div>
+    </div>
     <script src="/js/homepage/menutoggle.js"></script>
     <script src="/js/contact/formtoogle.js"></script>
+    <script src="/js/contact/showthank.js"></script>
   </body>
 </html>

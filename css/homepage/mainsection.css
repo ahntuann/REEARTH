@@ -152,3 +152,25 @@
     font-size: 13px;
   }
 }
+
+body.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+.page-transition {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 20, 20, 0.8); /* dark overlay */
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.page-transition.active {
+  opacity: 1;
+  pointer-events: auto;
+}

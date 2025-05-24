@@ -102,3 +102,70 @@
   margin-bottom: 40px;
   text-align: start;
 }
+
+@media screen and (max-width: 1024px) {
+  .section {
+    padding: 100px 30px;
+  }
+
+  .section-title-mid,
+  .section-title,
+  .section-sub-title {
+    text-align: center;
+  }
+
+  .container p,
+  .container-mid p {
+    text-align: center;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 80px 20px;
+    flex-direction: column;
+  }
+
+  .section-sub-title {
+    font-size: 2.5rem;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+  }
+
+  .section-title-mid {
+    font-size: 1.8rem;
+  }
+
+  .container p,
+  .container-mid p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section {
+    padding: 60px 15px;
+  }
+
+  .section-sub-title {
+    font-size: 2rem;
+  }
+
+  .section-title-mid {
+    font-size: 1.5rem;
+  }
+
+  .container p,
+  .container-mid p {
+    font-size: 13px;
+  }
+
+  .footer-credits p {
+    font-size: 13px;
+    text-align: center;
+  }
+}

@@ -71,6 +71,7 @@
   cursor: pointer;
   color: #000;
   border-radius: 20px;
+  text-decoration: none;
 }
 
 @media (max-width: 1024px) {

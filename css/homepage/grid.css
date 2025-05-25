@@ -19,6 +19,7 @@
   align-items: flex-start;
   justify-content: space-between;
   cursor: pointer;
+  text-decoration: none;
 }
 
 #mission-item-1,
@@ -75,6 +76,7 @@
   font-weight: 400;
   letter-spacing: 0.5px;
   font-size: 1.6rem;
+  text-decoration: none;
 }
 
 .mission-item p {
@@ -88,6 +90,7 @@
   text-align: start;
   display: flex;
   align-items: flex-start;
+  text-decoration: none;
 }
 
 .mission-item-icon {

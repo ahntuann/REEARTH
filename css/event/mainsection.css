@@ -83,6 +83,7 @@
 
 .new-item {
   margin: 60px 0;
+  position: relative;
 }
 
 .container {
@@ -361,4 +362,14 @@
   .img img {
     height: auto;
   }
+}
+
+.learn-more {
+  font-size: 16px;
+  color: black;
+  text-decoration: underline;
+  margin-left: 4px;
+  position: absolute;
+  top: 60px;
+  right: 80px;
 }
